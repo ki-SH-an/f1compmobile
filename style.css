@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pc: rgb(195, 166, 211);
+    --tc: rgb(82, 0, 126);
+}
+
+nav {
+    display: flex;
+    background-color: var(--pc);
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+    align-items: center;
+    padding: 5px 30px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.right ul {
+    display: flex;
+    gap: 30px;
+}
+
+.right ul li {
+    display: inline-flex;
+    list-style: none;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: var(--tc);
+    font-weight: bolder;
+    font-size: calc(1vw + 1vh);
+    font-family: 'poppins';
+}
+
+.logo img {
+    width: 4vw;
+}
+
+.boxes {
+    background-color: rgb(47, 32, 48);
+    margin: 20px;
+    padding: 20px;
+    width: auto;
+    min-width: 250px;
+    height: auto;
+    border: 2px solid var(--tc);
+    border-radius: 15px;
+}
+
+.box1 {
+    background-color: rgb(146, 56, 56);
+    margin: 20px;
+    padding: 20px;
+    width: 85%;
+    min-width: 220px;
+    height: auto;
+    border: 3px solid var(--pc);
+    font-weight: bolder;
+    font-size: calc(1vw + 2vh);
+    font-family: 'poppins';
+    border-radius: 15px;
+}
+
+.box2 {
+    background-color: rgb(113, 228, 224);
+    margin: 20px;
+    padding: 20px;
+    width: 85%;
+    min-width: 220px;
+    height: auto;
+    border: 3px solid var(--tc);
+    font-weight: bolder;
+    font-size: calc(1vw + 2vh);
+    font-family: 'poppins';
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.vs {
+    font-size: calc(2vw + 2vh);
+    font-weight: bolder;
+    font-family: 'poppins';
+    color: var(--pc);
+    margin: 0 30px;
+}
+
+p {
+    padding: 20px;
+    font-weight: bold;
+    font-size: calc(0.6vw + 1vh);
+    font-family: 'poppins';
+}
+
+.about {
+    color: var(--pc);
+    font-weight: bolder;
+    font-size: calc(3vw + 3vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins';
+}
+
+.fixed {
+    background-color: black;
+    width: 60px;
+    position: fixed;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 20px;
+    border: 2px solid var(--pc);
+    right: 20px;
+    padding: 10px;
+}
+
+.fixed img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.c2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+    border: 2px solid var(--pc);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'poppins';
+    font-size: calc(1vw + 2vh);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.i1 {
+    background-color: rgb(113, 228, 224);
+
+}
+
+.i2 {
+    background-color: #dc3545;
+}
+
+.i3 {
+    background-color: #28a745;
+}
+
+.i4 {
+    background-color: #fd7e14;
+}
+
+.i5 {
+    background-color: #dc3545;
+}
+
+.i6 {
+    background-color: #ffc107;
+}
+
+.grid {
+    background-color: rgb(47, 32, 48);
+    margin: 20px;
+    padding: 18px;
+    width: auto;
+    height: auto;
+    border: 2px solid var(--tc);
+    border-radius: 15px;
+}
+
+.di {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.di img {
+    width: 80%;
+    height: 29vh;
+    border-radius: 9px;
+}
+
+.blah {
+    display: flexbox;
+    text-align: center;
+}
+
+.blah p {
+    padding: 5px;
+}
+
+.button {
+    text-align: center;
+    margin: 10px;
+}
+
+.button a {
+    background-color: var(--pc);
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--tc);
+    font-size: large;
+    font-family: 'poppins';
+    font-weight: bold;
+}
+
+.button a:hover {
+    background-color: rgb(101, 72, 116);
+    color: rgb(190, 146, 214);
+}
+
+.ani {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bg {
+    width: 80vw;
+    height: 60vh;
+    background-color: aliceblue;
+    border-radius: 9px;
+    position: relative;
+    animation: bgcolor 10s linear;
+}
+
+.ball {
+    width: 5vw;
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    bottom: 1px;
+    left: 1px;
+    position: absolute;
+    animation: ballx 7s linear,
+               bally 1s ease-out 6 alternate;
+}
+
+@keyframes ballx {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 90%;
+    }
+}
+
+@keyframes bally {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: 60%;
+    }
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: aliceblue;
+    }
+
+    25% {
+        background-color: orange;
+    }
+
+    50% {
+        background-color: cyan;
+    }
+
+    65% {
+        background-color: red;
+    }
+
+    85% {
+        background-color: aliceblue;
+    }
+}
+
+@keyframes txtcolor1 {
+    0% {
+        color: rgb(47, 32, 48);
+    }
+
+    50% {
+        color: rgb(168, 168, 168);
+    }
+
+    100% {
+        color: rgb(47, 32, 48);
+    }
+}
+
+@keyframes txtcolor2 {
+    0% {
+        color: rgb(47, 32, 48);
+    }
+
+    50% {
+        color: orange;
+    }
+
+    100% {
+        color: rgb(47, 32, 48);
+    }
+}
+
+@keyframes txtcolor3 {
+    0% {
+        color: rgb(47, 32, 48);
+    }
+
+    50% {
+        color: cyan;
+    }
+
+    100% {
+        color: rgb(47, 32, 48);
+    }
+}
+
+@keyframes txtcolor4 {
+    0% {
+        color: rgb(47, 32, 48);
+    }
+
+    50% {
+        color: red;
+    }
+
+    100% {
+        color: rgb(47, 32, 48);
+    }
+}
+
+.text {
+    display: inline-flex;
+}
+
+.text h1 {
+    font-family: 'poppins';
+    font-size: calc(1vw + 2vh);
+    padding: 12px 0px;
+}
+
+.t1 h1 {
+    color: rgb(47, 32, 48);
+    animation: txtcolor1 1.1s linear;
+}
+
+.t2 h1 {
+    color: rgb(47, 32, 48);
+    animation: txtcolor2 1.1s linear 1.5s;
+}
+
+.t3 h1 {
+    color: rgb(47, 32, 48);
+    animation: txtcolor3 1.1s linear 3.5s;
+}
+
+.t4 h1 {
+    color: rgb(47, 32, 48);
+    animation: txtcolor4 1.1s linear 5.5s;
+    
+}
+.t1{
+    padding-left: 130px;
+}
+.t2{
+    padding-left: 135px;
+}
+.t3{
+    padding-left: 175px;
+}
+.t4{
+    padding-left: 175px;
+}
+@media screen and (orientation: portrait) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .right ul {
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 10vw;
+    }
+
+    .c2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        font-size: calc(1vw + 2vh);
+        padding: 10px 15px;
+        margin: 8px;
+    }
+
+    .grid {
+        padding: 8px;
+    }
+
+    .di {
+        height: 15vh;
+        width: 100%;
+    }
+
+    .di img {
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 9px;
+    }
+
+    .fixed {
+        width: 45px;
+        height: 45px;
+    }
+
+    .button a {
+        padding: 3px;
+        font-size: small;
+    }
+    .ball {
+        width: 5vw;
+        height: 2.7vh;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50px;
+        bottom: 1px;
+        left: 1px;
+        position: absolute;
+        animation: ballx 7s linear,
+                   bally 1s ease-out 6 alternate;
+    }
+    .bg {
+        width: 80vw;
+        height: 25vh;
+        background-color: aliceblue;
+        border-radius: 9px;
+        position: relative;
+        animation: bgcolor 10s linear;
+    }
+    .t1{
+        padding-left: 10px;
+    }
+    .t2{
+        padding-left: 23px;
+    }
+    .t3{
+        padding-left: 30px;
+    }
+    .t4{
+        padding-left: 30px;
+    }
+    .text h1 {
+        font-family: 'poppins';
+        font-size: calc(1vw + 1vh);
+        padding: 12px 0px;
+    }
+    
+}
