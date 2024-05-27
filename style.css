@@ -254,7 +254,7 @@ p {
     background-color: aliceblue;
     border-radius: 9px;
     position: relative;
-    animation: bgcolor 10s linear;
+    animation: bgcolor 10s linear 5s;
 }
 
 .ball {
@@ -265,8 +265,8 @@ p {
     bottom: 1px;
     left: 1px;
     position: absolute;
-    animation: ballx 7s linear,
-        bally 1s ease-out 6 alternate;
+    animation: ballx 7s linear 5s,
+        bally 1s ease-out 5s 6 alternate;
 }
 
 @keyframes ballx {
@@ -379,22 +379,22 @@ p {
 
 .t1 h1 {
     color: rgb(47, 32, 48);
-    animation: txtcolor1 1.1s linear;
+    animation: txtcolor1 1.1s linear 5s;
 }
 
 .t2 h1 {
     color: rgb(47, 32, 48);
-    animation: txtcolor2 1.1s linear 1.5s;
+    animation: txtcolor2 1.1s linear 6.5s ;
 }
 
 .t3 h1 {
     color: rgb(47, 32, 48);
-    animation: txtcolor3 1.1s linear 3.5s;
+    animation: txtcolor3 1.1s linear 8.5s ;
 }
 
 .t4 h1 {
     color: rgb(47, 32, 48);
-    animation: txtcolor4 1.1s linear 5.5s;
+    animation: txtcolor4 1.1s linear 10.5s ;
 }
 
 .names{
