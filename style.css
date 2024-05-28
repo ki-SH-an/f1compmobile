@@ -1,13 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-    background-color: black;
+    margin: 0;
+    background-color: black; /* Hide scrolling initially */
 }
 
-* {
-    margin: 0;
-    padding: 0;
+#loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    animation: fadeOut 3s linear 4s forwards; /* Add 'forwards' to keep final state */
 }
+
+#loading-text {
+    font-size: 2em;
+    font-weight: bold;
+    animation: zoomOut 3s forwards 4s;
+}
+
+
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(800);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none; 
+        visibility: hidden; 
+    }
+}
+
 
 :root {
     --pc: rgb(195, 166, 211);
@@ -49,7 +92,7 @@ nav {
 }
 
 .boxes {
-    background-color: rgb(47, 32, 48);
+    background-color: rgba(47, 32, 48, 0.675);
     margin: 20px;
     padding: 20px;
     width: auto;
@@ -60,7 +103,8 @@ nav {
 }
 
 .box1 {
-    background-color: rgb(146, 56, 56);
+    background: linear-gradient(45deg, black, #a82222,black);
+    color: aliceblue;
     margin: 20px;
     padding: 20px;
     width: 85%;
@@ -74,7 +118,8 @@ nav {
 }
 
 .box2 {
-    background-color: rgb(113, 228, 224);
+    background: linear-gradient(45deg,black, #43e1d6, black);
+    color: rgb(0, 0, 0);
     margin: 20px;
     padding: 20px;
     width: 85%;
@@ -155,39 +200,39 @@ p {
     align-items: center;
 }
 
-.i1 {background-color: rgba(0, 0, 0, 0.281);
+.i1 {background-color: rgba(0, 0, 0, 0.666);
     border: 2px solid cyan;
     color: cyan;
 
 }
 
-.i2 { background-color: rgba(0, 0, 0, 0.281);
+.i2 { background-color: rgba(0, 0, 0, 0.666);
     border: 2px solid rgb(223, 35, 35);
     color: rgb(223, 35, 35);
 }
 
-.i3 { background-color: rgba(0, 0, 0, 0.281);
+.i3 { background-color: rgba(0, 0, 0, 0.666);
     border: 2px solid rgb(62, 137, 110);
     color: rgb(82, 191, 151);
 }
 
-.i4 { background-color: rgba(0, 0, 0, 0.281);
+.i4 { background-color: rgba(0, 0, 0, 0.666);
     border: 2px solid rgb(255, 157, 0);
     color: rgb(255, 157, 0);
 }
 
-.i5 { background-color: rgba(0, 0, 0, 0.281);
+.i5 { background-color: rgba(0, 0, 0, 0.666);
     border: 2px solid rgb(223, 35, 35);
     color: rgb(223, 35, 35);
 }
 
-.i6 { background-color: rgba(0, 0, 0, 0.281);
+.i6 { background-color: rgba(0, 0, 0, 0.666);
     border: 2px solid rgb(255, 242, 0);
     color: rgb(255, 242, 0);
 }
 
 .grid {
-    background-color: rgb(47, 32, 48);
+    background-color: rgba(47, 32, 48, 0.675);
     margin: 20px;
     padding: 18px;
     width: auto;
