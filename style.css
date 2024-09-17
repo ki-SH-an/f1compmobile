@@ -197,7 +197,7 @@ p {
     border: 2px solid var(--pc);
     right: 20px;
     padding: 10px;
-    z-index: 1000;
+    z-index: 900;
 }
 
 .fixed img {
